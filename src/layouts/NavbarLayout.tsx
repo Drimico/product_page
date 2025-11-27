@@ -7,7 +7,7 @@ interface NavBarLayoutProps {
 }
 const NavbarLayout = ({ children, showNavbar }: NavBarLayoutProps) => {
   return (
-    <div>
+    <div className="w-screen h-screen flex flex-col items-start">
       {showNavbar && <Navbar />}
       {children}
     </div>
