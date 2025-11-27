@@ -1,7 +1,17 @@
+@font-face {
+  font-family: Raleway;
+  src: url("./assets/fonts/Raleway-VariableFont_wght.ttf");
+}
+
 @import "tailwindcss";
 
 * {
   @apply box-border;
+}
+
+@theme {
+  --font-raleway: Raleway, sans-serif;
+  --breakpoint-xs: 320px
 }
 
 body {
