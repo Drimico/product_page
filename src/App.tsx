@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { router } from "./router";
 import NavbarLayout from "./layouts/NavbarLayout";
+import useAuthGuard from "./hooks/useAuthGuard";
 
 function App() {
-
+  useAuthGuard();
   return (
     <>
       <Routes>
@@ -18,7 +19,7 @@ function App() {
         })}
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

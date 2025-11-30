@@ -19,9 +19,4 @@ export const router = [
     element: <Register />,
     showNavbar: false,
   },
-  {
-    path: "/create",
-    element: <CreateProductPage />,
-    showNavbar: true,
-  },
 ];
